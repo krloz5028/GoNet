@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924B025E24C64D80006AE240 /* test.db in Resources */ = {isa = PBXBuildFile; fileRef = 924B025C24C64D4C006AE240 /* test.db */; };
 		9294B7EC24C6448A0032F79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7EB24C6448A0032F79E /* AppDelegate.swift */; };
 		9294B7EE24C6448A0032F79E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7ED24C6448A0032F79E /* SceneDelegate.swift */; };
 		9294B7F024C6448A0032F79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7EF24C6448A0032F79E /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		924B025C24C64D4C006AE240 /* test.db */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.db; sourceTree = "<group>"; };
 		9294B7E824C6448A0032F79E /* GoNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9294B7EB24C6448A0032F79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9294B7ED24C6448A0032F79E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		924B025B24C64D3A006AE240 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				924B025C24C64D4C006AE240 /* test.db */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		9294B7DF24C6448A0032F79E = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		9294B80324C648700032F79E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				924B025B24C64D3A006AE240 /* Test */,
 				9294B7FF24C6479D0032F79E /* ItemModel.swift */,
 			);
 			path = Model;
@@ -155,6 +166,7 @@
 				9294B7F824C6448D0032F79E /* LaunchScreen.storyboard in Resources */,
 				9294B7F524C6448D0032F79E /* Assets.xcassets in Resources */,
 				9294B7F324C6448A0032F79E /* Main.storyboard in Resources */,
+				924B025E24C64D80006AE240 /* test.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
