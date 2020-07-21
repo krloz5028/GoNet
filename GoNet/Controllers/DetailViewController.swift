@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
             titleLabel.text = item.title
             descriptionLabel.text = item.description
             if let url = item.imageURL{
-                itemImageView.loadImageUsingCache(withUrl: url)
+                itemImageView.setImage(withUrl: url)
             }
         }
     }

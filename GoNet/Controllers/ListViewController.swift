@@ -56,7 +56,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource{
         
         
         if let url = item.imageURL{
-            cell.itemImageView?.loadImageUsingCache(withUrl: url)
+            cell.itemImageView?.setImage(withUrl: url)
         }
 
 
@@ -86,37 +86,4 @@ class ItemCell: UITableViewCell {
 }
 
 
-let imageCache = NSCache<NSString, UIImage>()
-extension UIImageView {
-    func loadImageUsingCache(withUrl url : URL) {
-        self.image = nil
 
-        // check cached image
-        if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString)  {
-            self.image = cachedImage
-            return
-        }
-
-        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(style: .medium)
-        addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-        activityIndicator.center = self.center
-
-        // if not, download image from url
-        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
-            if error != nil {
-                print(error!)
-                return
-            }
-
-            DispatchQueue.main.async {
-                if let image = UIImage(data: data!) {
-                    imageCache.setObject(image, forKey: url.absoluteString as NSString)
-                    self.image = image
-                    activityIndicator.removeFromSuperview()
-                }
-            }
-
-        }).resume()
-    }
-}

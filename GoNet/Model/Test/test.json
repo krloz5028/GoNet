@@ -17,7 +17,7 @@
   {
     "title": "The Avengers",
     "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "Images": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0NjY0NzE4OTReQTJeQWpwZ15BbWU3MDczODg2Nzc@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0NjY0NzE4OTReQTJeQWpwZ15BbWU3MDczODg2Nzc@._V1_SX1777_CR0,0,1777,999_AL_.jpg"
   },
   {
     "title": "The Wolf of Wall Street",
@@ -42,7 +42,7 @@
   {
     "title": "Gotham",
     "description": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
-    "Images": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDI3ODYyODY4OV5BMl5BanBnXkFtZTgwNjE5NDMwMDI@._V1_SY1000_SX1500_AL_.jpg"
+    "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDI3ODYyODY4OV5BMl5BanBnXkFtZTgwNjE5NDMwMDI@._V1_SY1000_SX1500_AL_.jpg"
   },
   {
     "title": "Power",
@@ -65,8 +65,8 @@
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3ODc1ODI5Ml5BMl5BanBnXkFtZTgwODMzMDY3OTE@._V1_.jpg"
   },
   {
-    "title": "Rogue One: A Star Wars Story",
-    "description": "The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.",
+    "title": "Rogue One: A Star Wars Story (or simply Rogue One)",
+    "description": "Research scientist Galen Erso and his family are in hiding on the planet Lah'mu when Imperial weapons developer Orson Krennic arrives to press him into completing the Death Star, a space station-based superweapon capable of destroying entire planets. Galen's wife, Lyra, is killed in the confrontation while their daughter, Jyn, escapes and is rescued by rebel extremist Saw Gerrera.\nFifteen years later, cargo pilot Bodhi Rook defects from the Empire, taking a holographic message recorded by Galen to Gerrera on the desert moon Jedha. Rebel Alliance intelligence officer Cassian Andor learns of the Death Star from an informant and frees Jyn from an Imperial labor camp at Wobani. Cassian brings Jyn to the Rebel leader Mon Mothma, who convinces her to find and rescue Galen so the Alliance can learn more about the Death Star. Cassian is covertly ordered to kill Galen rather than extract him.\nJyn, Cassian, and reprogrammed Imperial droid K-2SO travel to Jedha, where the Empire is removing kyber crystals from the holy city to power the Death Star; Gerrera and his partisans are engaged in an armed insurgency against them. With the aid of blind spiritual warrior Chirrut Îmwe and his mercenary friend Baze Malbus, Jyn makes contact with Gerrera, who has been holding Rook captive. Gerrera shows her the message, in which Galen reveals he has secretly built a vulnerability into the Death Star and directs them to retrieve the schematics from an Imperial data bank on the planet Scarif.",
     "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3MzA4Nzk3NV5BMl5BanBnXkFtZTgwNjAxMTc1ODE@._V1_SX1777_CR0,0,1777,744_AL_.jpg"
   },
   {
