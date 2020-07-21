@@ -21,10 +21,9 @@ extension ItemModel: Codable {
         case image = "image"
     }
     
-    
     init(from decoder: Decoder) throws{
         let container = try decoder.container(keyedBy: CodingKeys.self)
-
+        
         if let imageString = try container.decodeIfPresent(String.self, forKey: .image),
             let url = URL(string:imageString){
             imageURL = url

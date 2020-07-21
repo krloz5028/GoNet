@@ -73,12 +73,12 @@
 		9294B7EA24C6448A0032F79E /* GoNet */ = {
 			isa = PBXGroup;
 			children = (
-				92EEA91424C687FF00A7590F /* Utils */,
 				9294B7EB24C6448A0032F79E /* AppDelegate.swift */,
 				9294B7ED24C6448A0032F79E /* SceneDelegate.swift */,
 				9294B80324C648700032F79E /* Model */,
 				9294B80124C6485E0032F79E /* Views */,
 				9294B80224C648690032F79E /* Controllers */,
+				92EEA91424C687FF00A7590F /* Utils */,
 				9294B7F424C6448D0032F79E /* Assets.xcassets */,
 				9294B7F924C6448D0032F79E /* Info.plist */,
 			);

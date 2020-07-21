@@ -15,8 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30X-84-sYC">
+                                <rect key="frame" x="0.0" y="138" width="207" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LIR-Cb-gHd"/>
+                                </constraints>
+                                <state key="normal" title="Limpiar"/>
+                                <connections>
+                                    <action selector="cleanButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6El-EU-2EA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spo-AT-U6O">
+                                <rect key="frame" x="207" y="138" width="207" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="deS-FT-POy"/>
+                                </constraints>
+                                <state key="normal" title="Inicio"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsU-Oi-dkq"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vvR-sZ-Hhc">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" id="Q3w-6B-JZi" customClass="ItemCell" customModule="GoNet" customModuleProvider="target">
@@ -67,6 +87,23 @@
                                             <outlet property="titleLabel" destination="bkA-5N-AW9" id="YHD-df-c5e"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ThreadCell" textLabel="WTX-oJ-tWr" style="IBUITableViewCellStyleDefault" id="l9H-90-bdq">
+                                        <rect key="frame" x="0.0" y="108.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l9H-90-bdq" id="ixX-44-Ifc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WTX-oJ-tWr">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Rf0-TT-49x"/>
@@ -82,23 +119,35 @@
                                     <segment title="Table"/>
                                     <segment title="Threads"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="JJX-E3-fyq"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="YWp-1z-qat" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0yd-dS-vNL"/>
-                            <constraint firstItem="vvR-sZ-Hhc" firstAttribute="top" secondItem="YWp-1z-qat" secondAttribute="bottom" constant="10" id="2xd-NB-5er"/>
+                            <constraint firstItem="30X-84-sYC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="34n-ML-zTI"/>
                             <constraint firstItem="vvR-sZ-Hhc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7fX-7J-Eql"/>
+                            <constraint firstItem="Spo-AT-U6O" firstAttribute="leading" secondItem="30X-84-sYC" secondAttribute="trailing" id="AWf-Ue-5uy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWp-1z-qat" secondAttribute="trailing" constant="20" id="Maq-M2-sni"/>
+                            <constraint firstItem="Spo-AT-U6O" firstAttribute="top" secondItem="YWp-1z-qat" secondAttribute="bottom" id="Sez-PW-YaT"/>
+                            <constraint firstItem="30X-84-sYC" firstAttribute="top" secondItem="YWp-1z-qat" secondAttribute="bottom" id="VAL-Ud-TDj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vvR-sZ-Hhc" secondAttribute="trailing" id="dIj-cY-C5j"/>
+                            <constraint firstItem="vvR-sZ-Hhc" firstAttribute="top" secondItem="YWp-1z-qat" secondAttribute="bottom" id="ft5-u0-yiD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Spo-AT-U6O" secondAttribute="trailing" id="gc1-d5-8e1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vvR-sZ-Hhc" secondAttribute="bottom" id="hbn-ob-9jC"/>
+                            <constraint firstItem="vvR-sZ-Hhc" firstAttribute="top" secondItem="YWp-1z-qat" secondAttribute="bottom" priority="750" constant="40" id="izZ-sd-syf"/>
                             <constraint firstItem="YWp-1z-qat" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="qVV-fe-sIq"/>
+                            <constraint firstItem="Spo-AT-U6O" firstAttribute="width" secondItem="30X-84-sYC" secondAttribute="width" id="rha-Tn-Rvw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="HQJ-Z0-N7B"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="YWp-1z-qat" id="BEz-hX-z7P"/>
                         <outlet property="tableView" destination="vvR-sZ-Hhc" id="KnZ-AJ-jxS"/>
+                        <outlet property="tableViewTopConstraint" destination="ft5-u0-yiD" id="Xzi-SZ-cfy"/>
                         <segue destination="nUz-Qa-6SL" kind="show" identifier="DetailSegue" id="qoo-NR-WFZ"/>
                     </connections>
                 </viewController>
